@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: ./
+    destination: /opt/poc2
+permissions:
+    - object: /opt/poc2
+      pattern: "**"
+      owner: root
+      group: root
+      mode: 755
+      type:
+        - file
